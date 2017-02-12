@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--
+    WARNING! ONLY THE PAGE DIVS ARE LOADED WITH nuChangePage()!!!
+    THE INCLUDES BELOW ARE ONLY USED FOR TESTING!!!
+    <title>BFB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="themes/bfb.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/zzzapp_pincreate.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!---->
+
+</head>
+<body>
+
+<div data-role="page" class="pin-background" data-page-title="Create PIN" data-hide-back-button data-js-path="js/zzzapp_pincreate.js">
+
+<div role="main" id="nuBuilderHome">
+    <form onsubmit="return nuCreatePIN()" id="form" style="padding-top:10px !important;">
+        <input id="pinone1" type="hidden" />
+        <input id="pinone2" type="hidden" />
+        <input id="pinone3" type="hidden" />
+        <input id="pinone4" type="hidden" />
+        <table class="pin-circle-table">
+            <tr>
+                <td>
+                    <div id="circle1" class="pinCircle"></div>
+                    <input type="radio" class="pin-radio-input" id="r1" />
+                </td>
+                <td>
+                    <div id="circle2" class="pinCircle"></div>
+                    <input type="radio" class="pin-radio-input" id="r2" />
+                </td>
+                <td>
+                    <div id="circle3" class="pinCircle"></div>
+                    <input type="radio" class="pin-radio-input" id="r3" />
+                </td>
+                <td>
+                    <div id="circle4" class="pinCircle"></div>
+                    <input type="radio" class="pin-radio-input" id="r4" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="keyboard">
+        <div class="pin-keyboard">
+            <table class="pin-keyboard-table">
+                <tr>
+                    <td class="pin-button-td"><button class="pin" id="n1">1<div class="pin-letters"></div></button></td>
+                    <td class="pin-button-td"><button class="pin" id="n2">2<div class="pin-letters">ABC</div></button></td>
+                    <td class="pin-button-td"><button class="pin" id="n3">3<div class="pin-letters">DEF</div></button></td>
+                </tr>
+                <tr>
+                    <td class="pin-button-td"><button class="pin" id="n4">4<div class="pin-letters">GHI</div></button></td>
+                    <td class="pin-button-td"><button class="pin" id="n5">5<div class="pin-letters">JKL</div></button></td>
+                    <td class="pin-button-td"><button class="pin" id="n6">6<div class="pin-letters">MNO</div></button></td>
+                </tr>
+                <tr>
+                    <td class="pin-button-td"><button class="pin" id="n7">7<div class="pin-letters">PQRS</div></button></td>
+                    <td class="pin-button-td"><button class="pin" id="n8">8<div class="pin-letters">TUV</div></button></td>
+                    <td class="pin-button-td"><button class="pin" id="n9">9<div class="pin-letters">WXYZ</div></button></td>
+                </tr>
+                <tr>
+                    <td class="pin-button-td"><a id="b" href="#" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-theme="a" class="pin pin-a ui-link ui-btn ui-btn-a ui-icon-arrow-l ui-btn-icon-notext ui-shadow ui-corner-all" role="button">My button</a></td>
+                    <td class="pin-button-td"><button class="pin" id="n0">0<div class="pin-letters"></div></button></td>
+                    <td class="pin-button-td"><a id="d" href="#" data-role="button" data-icon="delete" data-iconpos="notext" data-theme="a" class="pin pin-a ui-link ui-btn ui-btn-a ui-icon-delete ui-btn-icon-notext ui-shadow ui-corner-all" role="button">My button</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
